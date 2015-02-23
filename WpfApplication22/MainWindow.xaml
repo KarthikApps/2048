@@ -1,0 +1,40 @@
+﻿<Window rowIndex:Class="WpfApplication22.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:rowIndex="http://schemas.microsoft.com/winfx/2006/xaml"
+        Name="game_window" Title="2048" Height="345" Width="270" HorizontalContentAlignment="Center" ResizeMode="CanMinimize" Background="Chocolate" PreviewKeyDown="Window_PreviewKeyDown">
+    <Grid HorizontalAlignment="Center" VerticalAlignment="Top">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="63"/>
+            <ColumnDefinition Width="63"/>
+            <ColumnDefinition Width="63"/>
+            <ColumnDefinition Width="63"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="63"/>
+            <RowDefinition Height="63"/>
+            <RowDefinition Height="63"/>
+            <RowDefinition Height="63"/>
+        </Grid.RowDefinitions>
+        <Label Name="Label00" BorderThickness="5" BorderBrush="Coral" Background="AntiqueWhite" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0" Grid.Row="1" Grid.Column="0" Width="60" Height="60"/>
+        <Label Name="Label01" BorderThickness="5" BorderBrush="Coral" Background="AntiqueWhite" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0" Grid.Row="1" Grid.Column="1" Width="60" Height="60"/>
+        <Label Name="Label02" BorderThickness="5" BorderBrush="Coral" Background="AntiqueWhite" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0" Grid.Row="1" Grid.Column="2" Width="60" Height="60"/>
+        <Label Name="Label03" BorderThickness="5" BorderBrush="Coral" Background="AntiqueWhite" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0" Grid.Row="1" Grid.Column="3" Width="60" Height="60"/>
+        <Label Name="Label10" BorderThickness="5" BorderBrush="Coral" Background="AntiqueWhite" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0" Grid.Row="2" Grid.Column="0" Width="60" Height="60"/>
+        <Label Name="Label11" BorderThickness="5" BorderBrush="Coral" Background="AntiqueWhite" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0" Grid.Row="2" Grid.Column="1" Width="60" Height="60"/>
+        <Label Name="Label12" BorderThickness="5" BorderBrush="Coral" Background="AntiqueWhite" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0" Grid.Row="2" Grid.Column="2" Width="60" Height="60"/>
+        <Label Name="Label13" BorderThickness="5" BorderBrush="Coral" Background="AntiqueWhite" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0" Grid.Row="2" Grid.Column="3" Width="60" Height="60"/>
+        <Label Name="Label20" BorderThickness="5" BorderBrush="Coral" Background="AntiqueWhite" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0" Grid.Row="3" Grid.Column="0" Width="60" Height="60"/>
+        <Label Name="Label21" BorderThickness="5" BorderBrush="Coral" Background="AntiqueWhite" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0" Grid.Row="3" Grid.Column="1" Width="60" Height="60"/>
+        <Label Name="Label22" BorderThickness="5" BorderBrush="Coral" Background="AntiqueWhite" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0" Grid.Row="3" Grid.Column="2" Width="60" Height="60"/>
+        <Label Name="Label23" BorderThickness="5" BorderBrush="Coral" Background="AntiqueWhite" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0" Grid.Row="3" Grid.Column="3" Width="60" Height="60"/>
+        <Label Name="Label30" BorderThickness="5" BorderBrush="Coral" Background="AntiqueWhite" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0" Grid.Row="4" Grid.Column="0" Width="60" Height="60"/>
+        <Label Name="Label31" BorderThickness="5" BorderBrush="Coral" Background="AntiqueWhite" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0" Grid.Row="4" Grid.Column="1" Width="60" Height="60"/>
+        <Label Name="Label32" BorderThickness="5" BorderBrush="Coral" Background="AntiqueWhite" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0" Grid.Row="4" Grid.Column="2" Width="60" Height="60"/>
+        <Label Name="Label33" BorderThickness="5" BorderBrush="Coral" Background="AntiqueWhite" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0" Grid.Row="4" Grid.Column="3" Width="60" Height="60"/>
+        <Label Name="Score" Content="Score : " BorderThickness="3" BorderBrush="BlueViolet" HorizontalAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Grid.Column="2" Margin="0,0,0,0" Grid.ColumnSpan="2" Width="123" Height="30"/>
+        <Button Content="Reset" Name="ResetButton" ToolTip="Resets the current Game" FontSize="10" HorizontalAlignment="Center" Height="30" Margin="0,0,0,0" BorderThickness="3" Background="DarkSalmon" BorderBrush="BlueViolet" VerticalAlignment="Center" Width="60" Click="Button_Click"/>
+        <Button Content="Undo" Name="UndoButton" FontSize="10" ToolTip="Restores the Previous Frame" HorizontalAlignment="Center" Height="30" Margin="0,0,0,0" BorderThickness="3" Background="DarkSalmon" BorderBrush="BlueViolet" VerticalAlignment="Center" Width="60" Click="Button_Click" Grid.Column="1"/>
+        <Label Content="© Kappspot" FontSize="10" HorizontalContentAlignment="Right" VerticalContentAlignment="Top" HorizontalAlignment="Left" Height="30" Margin="57,59.8,-0.2,-26.6" Grid.Row="4" VerticalAlignment="Top" Width="196" Grid.ColumnSpan="4"/>
+    </Grid>
+</Window>
