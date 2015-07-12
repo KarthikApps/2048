@@ -62,7 +62,7 @@
     <SignManifests>true</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>31F15AF1F39ABE9EA915944FA54D00E7607B4705</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>4F9D84993C4DD70C2DA175276C9D475FA5A45B2A</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestKeyFile>WpfApplication22_TemporaryKey.pfx</ManifestKeyFile>
